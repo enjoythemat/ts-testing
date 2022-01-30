@@ -1,9 +1,10 @@
 import React, { FC } from 'react'
+import AppRouter from './components/AppRouter'
 
 const App: FC = () => {
   return (
     <div className='App'>
-      TS App Component
+      <AppRouter />
     </div>
   )
 }
