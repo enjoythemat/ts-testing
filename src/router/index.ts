@@ -1,6 +1,6 @@
 import React from 'react'
-import Event from '../pages/Event'
 import Login from '../pages/Login'
+import Event from '../pages/Event'
 
 export interface IRoute {
   path: string
@@ -12,10 +12,10 @@ export enum RouteNames {
   EVENT = '/'
 }
 
-export const privateRoutes: IRoute[] = [
+export const publicRoutes: IRoute[] = [
   { path: RouteNames.LOGIN, element: Login }
 ]
 
-export const publicRoutes: IRoute[] = [
+export const privateRoutes: IRoute[] = [
   { path: RouteNames.EVENT, element: Event }
 ]
